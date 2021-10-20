@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        p, li {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1{
+            margin-top: 0;
+            font-size: 40px;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .bold-text {
+            font-weight: bold;
+            color: black;
+        }
+
+        .menu-color {
+            color: #00FCBB;
+        }
+
+        .purple {
+            background-color: #6A13FB;
+        }
+
+        .white-text {
+            color:white;
+        }
+
+        .block1 {
+            width: 980px;
+            margin: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            align-items: center;
+        }
+
+        .exp {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .exp li {
+            margin: 10px 0;
+        }
+
+        .nav li {
+            display: inline-block;
+            margin-left: 0;
+            padding-left: 0;
+            cursor: pointer;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: #00FCBB;
+        }
+
+        .achievements {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            color: #433A5E;
+        }
+
+        .achievements li{
+            background: url("./img/icon-ach.png") no-repeat left center;
+            padding-left: 70px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin: 20px 0;
+        }
+
+        .str-points {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            
+        }
+
+        .str-points li {
+            background: url("./img/icon-str.png") no-repeat left center;
+            padding-left: 70px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin: 20px 0;
+        }
+
+        .name-tag {
+            font-size: 28px;
+            letter-spacing: 0.2em;
+        }
+
+        .paragraph {
+            margin: 20px 0;
+            line-height: 30px;
+        }
+
+        .block1.no-padding-top {
+            padding-top: 0;
+        }
+
+        .hands-bg {
+            background-image: url("./img/credo-bg.png");
+            background-position: center;
+            background-size: cover;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-size: 20px;
+        }
+
+        .circle-img {
+            border-radius: 50%;
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        #contact-form input, #contact-form textarea{
+            padding: 20px;
+            margin-bottom: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            width: 934px;
+            outline: none;
+            border: none;
+            border: 3px solid #00FCBB;
+        }
+
+        textarea {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100px;
+        }
+
+        input#submit {
+            width: 350px;
+            cursor: pointer;
+            background: #00FCBB;
+            color: #6A13FB;
+            font-size: 24px;
+        }
+
+        #gotop {
+            text-decoration: none;
+            display: inline-block;
+            background: #00FCBB;
+            color: #6A13FB;
+            width: 73px;
+            height: 73px;
+            font-size: 55px;
+            font-weight: bold;
+            text-align: center; 
+            position: fixed;
+            bottom: 70px;
+            right: 60px;  
+        }
+
+        .logo-container {
+            width: 980px;
+            height: 547px;
+            background-image: url("./img/ponchik.jpg");
+            background-size: cover;
+
+            box-shadow: 0px -120px 50px 0px rgba(0,0,0,0.8) inset;
+        }
+
+        .text-overlap {
+            position: relative;
+            top: -95px;
+            padding: 0 60px; 
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="purple">
+        <div class="block1" id="top">
+            <ul class="menu-color nav">
+                <li><span class="menu-color bold-text name-tag">Кристина <br>Максимова</span></li>
+                <li><a href="#experience">Опыт работы</a></li>
+                <li><a href="#achievements">Достижения</a></li>
+                <li><a href="#points">Сильные стороны</a></li>
+                <li><a href="#life">Девиз по жизни</a></li>
+                <li><a href="#hobby">Личное</a></li>
+                <li><a href="#contact">Контакт</a></li>
+            </ul>
+            <div class="logo-container"></div>
+            <p class="white-text paragraph text-overlap">Фриланс-модель с дипломом преподавателя и переводчика английского и немецкого языков. 
+            Очень интересует IT-сфера, так как это наше <b>будущее!</b></p>
+            <h1 class="white-text">Программист-пончик!</h1>
+        </div>
+    </div>
+        <div class="block1" id="experience">
+            <h2>Опыт работы</h2>
+            <ol class="exp">
+                <li><span class="bold-text">Январь 2015 - Июнь 2016</span> - бармен</li>
+                <li><span class="bold-text">Июль 2016 - Апрель 2018</span> - переводчик-копирайтер</li>
+                <li><span class="bold-text">Май 2018 - настоящее время</span> - фриланс-модель</li>
+            </ol>
+        </div>
+        <div class="block1 no-padding-top" id="achievements">
+            <h2>Мои достижения</h2>
+            <p>Главные профессиональные достижения:</p>
+            <ul class="achievements">
+                <li><span class="bold-text">Участник</span> конкурса научных работ на соискание премии им.Лобачевского</li>
+                <li><span class="bold-text">Первое место</span> в олимпиаде по английскому языку среди студентов педагогического колледжа</li>
+                <li><span class="bold-text">Второе место</span> в фонетическом конкурсе "Весна. Любовь. Вдохновение."</li>
+                <li><span class="bold-text">5ый уровень</span> по Oxford Placement Test - уровень upper-intermediate</li>
+            </ul>
+        </div>
+        <div class="block1 no-padding-top" id="points">
+            <h2>Мои сильные стороны</h2>
+            <ul class="str-points">
+                <li class="bold-text">Быстрая обучаемость</li>
+                <li class="bold-text">Многозадачность</li>
+                <li class="bold-text">Хорошее знание английского и корейского языков</li>
+            </ul>
+        </div>
+        <div class="hands-bg" id="life">
+            <div class="block1">
+                <h2 class="white-text">Девиз по жизни</h2>
+                <p class="white-text"><i>"Для всего существует причина".</i></p>
+            </div>
+        </div>
+        <div class="block1" id="hobby">
+            <h2>Личное</h2>
+            <p class="paragraph">С детства увлечена музыкой: занималась танцами, вокалом, игрой на гитаре и фортепиано. 
+                Очень люблю читать и смотреть фильмы, сериалы. <br>Также увлекалась театром, писательством небольших рассказов. 
+                Моя мечта - выучить как можно больше языков, особенно китайский.</p>
+            <div class="img-container">
+                <img class="circle-img" src="./img/music.jpg" alt="pic1">
+                <img class="circle-img" src="./img/books.jpg" alt="pic2">
+                <img class="circle-img" src="./img/chinese.jpg" alt="pic3">
+            </div>
+        </div>
+        <div class="block1 no-padding-top" id="contact">
+            <h2>Контакт</h2>
+            <form action="/" method="POST" id="contact-form">
+                <input type="text" name="FIO" placeholder="ФИО">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" id="message" placeholder="Сообщение"></textarea>
+                <input type="submit" name="submit" id="submit" value="Отправить">
+            </form>
+                <a id="gotop" href="#top">^</a>
+        </div>
+    </div>
+</body>
+</html>
